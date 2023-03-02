@@ -5,4 +5,3 @@ Um site para divulgação da Alura Plus, uma plataforma de streaming com os cont
 Tecnologias
 HTML
 CSS
-Screenshots
