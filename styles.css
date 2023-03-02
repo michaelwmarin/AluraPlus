@@ -1,0 +1,174 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --font-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-principal)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__img-combo {
+    margin: 1em 0 2em 0;
+}
+
+.container__titulo {
+    /* Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único. */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container__button {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.6em;
+    width: 512px;
+    display: inline-block;
+    text-align: center;
+}
+
+.button__secundario {
+
+    /*Auto layout*/
+    border: 2px solid var(--branco-principal);
+    background: transparent;
+    /*Inside auto layout*/
+    order: 1;
+    flex-grow: 0;
+    
+}
+
+.button__terceiro {
+    margin: 2em 10em;
+    width: 200px;
+    display: inline-block;
+}
+
+.container__aviso {
+    /*O preço pode variar caso a assinatura seja feita em outros planos.*/
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__principal {
+    margin: 0 6em;
+}
+
+.secundario__img {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.1em;
+    color: var(--branco-principal);
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+    line-height: 150%;
+    opacity: 0.8;
+}
+
+.texto__dispositivos {
+    color: var(--branco-principal);
+    font-size: 32px;
+}
+
+.dispositivo__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivo__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.img__dispositivo {
+    width: 339px;
+    height: 192px;
+    align-items: center;
+}
+.container__descricao {
+    padding: 2em;
+}
+
+.container__terceiro {
+    text-align: center;
+    padding: 1em;
+}
+
+.rodape {
+    text-align: center;
+    margin: 0 3em;
+}
+
+.rodape__logo {  
+    margin-bottom: 2em;
+}
+
+.copyright {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a {
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
